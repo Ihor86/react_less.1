@@ -1,9 +1,23 @@
 import logo from './logo.svg';
-import './App.css';
+import styles from './App.css';
+import './apple-touch-icon.png'
+import './patron2.jpg'
+import './components/Character.js'
+import Character from "./components/Character";
 
-function App() {
+export const App = () => {
   return (
     <div className="App">
+      <h1>Hello</h1>
+        <h2>Ukraine</h2>
+        
+        <div>
+            <h2 className={styles.AppLogo} >Patron</h2>
+            <img src={"./patron2.jpg"} alt={"patron"}/>
+        </div>
+        <div>
+            <Character/>
+        </div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
